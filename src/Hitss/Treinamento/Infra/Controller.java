@@ -14,13 +14,18 @@ public class Controller {
 		Regiao[2] = "SP";
 		Regiao[3] = "Maranhão";
 		
+		String[] Olho = new String[4];
+		Olho[1] = "Azul";
+		Olho[2] = "Verde";
+		Olho[3] = "Castanho";
+		
 		for (int i = 1; i < Regiao.length; i++) {
-			Listagem(Regiao[i], Sexo[i]);
+			Listagem(Regiao[i], Sexo[i], Olho[i]);
 		}
 		
 	}
 	
-	public static void Listagem(String regiao, String sexo) {
+	public static void Listagem(String regiao, String sexo, String olho) {
 		
 		if (regiao == "RJ") {
 			
@@ -51,5 +56,8 @@ public class Controller {
 		} else {
 			System.out.println("Sexo Feminino.");	
 		}	
-	}	
-}
+		
+		System.out.println("Olho: " +  olho);
+	}
+}	
+
